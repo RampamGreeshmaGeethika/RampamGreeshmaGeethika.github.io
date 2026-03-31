@@ -1,29 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Greeshma Rampam — Data Analyst</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Greeshma Geethika Rampam — Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <section id="home">
-    <h1>Greeshma Geethika Rampam</h1>
-    <p>Data Analyst | MS Data Science @ University of Houston</p>
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">GGR<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="Resume_Greeshma_DA.docx" class="nav-resume" download>Resume ↓</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tag animate-up delay-1">✦ Available for opportunities</p>
+      <h1 class="hero-name animate-up delay-2">Greeshma<br/><em>Geethika</em><br/>Rampam</h1>
+      <p class="hero-role animate-up delay-3">Data Analyst <span class="divider">·</span> MS Data Science @ UH <span class="divider">·</span> Houston, TX</p>
+      <p class="hero-desc animate-up delay-4">Transforming complex datasets into clear, actionable business insights using Python, SQL, Tableau, and Power BI. Passionate about the intersection of analytics, AI, and strategy.</p>
+      <div class="hero-cta animate-up delay-5">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-stats animate-up delay-6">
+        <div class="stat"><span class="stat-num">3.88</span><span class="stat-label">GPA</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Projects</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">1</span><span class="stat-label">Publication</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">93%</span><span class="stat-label">KPI Hit Rate</span></div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <!-- project cards go here -->
+  <!-- ABOUT -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-tag">01 — About</div>
+      <div class="about-grid">
+        <div class="about-left">
+          <h2 class="section-title">I blend analytics<br/>with <em>AI & strategy</em></h2>
+          <p>I'm a Data Analyst and Engineering Data Science graduate student at the University of Houston, passionate about transforming messy, complex data into stories that drive real decisions.</p>
+          <p>With hands-on experience across media analytics, database engineering, and machine learning, I bring both the technical depth and the communication skills to work effectively with engineers, stakeholders, and business teams alike.</p>
+          <p>When I'm not wrangling datasets, I'm exploring AI agents, building ETL pipelines, or diving into the latest in LLM research.</p>
+          <div class="about-links">
+            <a href="https://linkedin.com/in/rampam-greeshmageethika-0537ba209" target="_blank" class="about-link">LinkedIn ↗</a>
+            <a href="https://github.com/RampamGreeshmaGeethika" target="_blank" class="about-link">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="edu-card">
+            <div class="edu-icon">🎓</div>
+            <div>
+              <div class="edu-degree">M.S. Engineering Data Science</div>
+              <div class="edu-school">University of Houston, TX</div>
+              <div class="edu-meta">2024 – 2026 &nbsp;·&nbsp; GPA 3.88 / 4.0</div>
+              <div class="edu-courses">Cloud Computing · AI · Data Visualisation · Big Data Analytics · Data Mining · Probability & Statistics</div>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-icon">🏛️</div>
+            <div>
+              <div class="edu-degree">B.Tech Computer Science (Data Analytics)</div>
+              <div class="edu-school">Vellore Institute of Technology, India</div>
+              <div class="edu-meta">2020 – 2024 &nbsp;·&nbsp; GPA 8.78 / 10.0</div>
+              <div class="edu-courses">ML Fundamentals · Data Structures · Database Systems · Python · Software Engineering</div>
+            </div>
+          </div>
+          <div class="cert-row">
+            <div class="cert-pill">🏅 AWS Cloud Foundations</div>
+            <div class="cert-pill">📊 Microsoft Power BI Associate</div>
+            <div class="cert-pill">🤖 IBM Data Analyst</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <a href="mailto:rampamgreeshma@gmail.com">Email Me</a>
+  <!-- SKILLS -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <div class="section-tag">02 — Skills</div>
+      <h2 class="section-title">Technical <em>Expertise</em></h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-card-icon">🐍</div>
+          <h3>Programming & Analysis</h3>
+          <div class="skill-tags">
+            <span>Python</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span>
+            <span>SQL</span><span>R</span><span>BeautifulSoup</span><span>Flask</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">📊</div>
+          <h3>Visualisation & BI</h3>
+          <div class="skill-tags">
+            <span>Tableau</span><span>Power BI</span><span>Looker</span>
+            <span>Advanced Excel</span><span>Power Query</span><span>PivotTables</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">🗄️</div>
+          <h3>Databases & Cloud</h3>
+          <div class="skill-tags">
+            <span>Snowflake</span><span>BigQuery</span><span>MySQL</span>
+            <span>PostgreSQL</span><span>SQL Server</span><span>AWS</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">🤖</div>
+          <h3>Machine Learning & AI</h3>
+          <div class="skill-tags">
+            <span>Random Forest</span><span>XGBoost</span><span>SVM</span>
+            <span>SMOTE</span><span>LLMs</span><span>Prompt Engineering</span><span>ETL</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">📈</div>
+          <h3>Analytics & Strategy</h3>
+          <div class="skill-tags">
+            <span>KPI Development</span><span>A/B Testing</span><span>Cohort Analysis</span>
+            <span>Forecasting</span><span>Root Cause Analysis</span><span>Stakeholder Reporting</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">⚙️</div>
+          <h3>Data Engineering</h3>
+          <div class="skill-tags">
+            <span>ETL Pipelines</span><span>Data Modelling</span><span>Data Quality Checks</span>
+            <span>Automated Reporting</span><span>SOPs</span><span>Documentation</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </section>
 
+  <!-- EXPERIENCE -->
+  <section id="experience" class="experience section">
+    <div class="container">
+      <div class="section-tag">03 — Experience</div>
+      <h2 class="section-title">Professional <em>Journey</em></h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">May 2025 – Jul 2025</div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Data Analyst Intern</h3>
+                <div class="timeline-company">Developer DB · Houston, Texas</div>
+              </div>
+              <div class="timeline-badge">Internship</div>
+            </div>
+            <ul>
+              <li>Collected, cleaned, and analysed structured datasets (10,000+ records) to identify trends informing weekly operational reporting for management.</li>
+              <li>Automated data extraction and transformation workflows using SQL and Python (Pandas), reducing manual reporting time by ~30%.</li>
+              <li>Built interactive dashboards in Tableau and Power BI tracking 8+ KPIs, enabling real-time performance monitoring for stakeholders.</li>
+              <li>Collaborated with backend engineers and senior analysts to validate data pipelines and ensure accuracy across 3 cross-functional teams.</li>
+            </ul>
+            <div class="timeline-tools"><span>SQL</span><span>Python</span><span>Tableau</span><span>Power BI</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Jan 2024 – Aug 2024</div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Data Analyst Intern — Digital Media</h3>
+                <div class="timeline-company">THG Publishing Pvt Ltd · Chennai, India</div>
+              </div>
+              <div class="timeline-badge">Internship</div>
+            </div>
+            <ul>
+              <li>Analysed large-scale audience engagement, digital subscription, and advertising datasets for a major news organisation.</li>
+              <li>Built advanced Excel models using PivotTables, VLOOKUP/XLOOKUP, and Power Query to support operational reporting and forecasting.</li>
+              <li>Led Tableau-driven digital campaign analysis, optimising strategies and achieving <strong>93% of engagement KPIs</strong>.</li>
+              <li>Developed customer segmentation and LTV models, revealing an <strong>85% customer return rate</strong> and guiding marketing decisions.</li>
+              <li>Extracted and analysed Indian election data at scale using BeautifulSoup for audience profiling and strategic planning.</li>
+            </ul>
+            <div class="timeline-tools"><span>Tableau</span><span>Excel</span><span>Python</span><span>BeautifulSoup</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Jan 2023 – Aug 2023</div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Data Analyst Externship</h3>
+                <div class="timeline-company">SmartInternz · Amaravathi, India</div>
+              </div>
+              <div class="timeline-badge">Externship</div>
+            </div>
+            <ul>
+              <li>Designed and developed an ML pipeline for music genre classification using Random Forest, SVM, and XGBoost, achieving <strong>88% accuracy</strong> through hyperparameter tuning and SMOTE.</li>
+              <li>Deployed the optimised model via Flask into a real-time web interface for on-demand predictions, enhancing personalisation by 25%.</li>
+            </ul>
+            <div class="timeline-tools"><span>Python</span><span>Scikit-learn</span><span>XGBoost</span><span>Flask</span><span>SMOTE</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-tag">04 — Projects</div>
+      <h2 class="section-title">Selected <em>Work</em></h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-top">
+            <div class="project-tags"><span class="tag-featured">Featured</span><span>AI Agent</span><span>LLMs</span><span>Python</span></div>
+            <a href="https://github.com/ssaglave/middle-america-job-agent" target="_blank" class="project-link">GitHub ↗</a>
+          </div>
+          <h3>Middle America Job & Application AI Agent</h3>
+          <p>Autonomous AI agent that searches job boards, extracts structured listings, and applies constraint-based filtering (excluding FAANG and startups). Built a ranking algorithm based on skill match, recency, and location, with LLM-powered resume and cover letter personalisation. Includes bias and fairness analysis on the tailoring system.</p>
+          <div class="project-highlights">
+            <div class="highlight">🤖 LLM-powered personalisation</div>
+            <div class="highlight">⚖️ Bias & fairness analysis</div>
+            <div class="highlight">📍 Location-aware ranking</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-tags"><span>MySQL</span><span>PHP</span><span>Dashboards</span></div>
+            <a href="https://github.com/RampamGreeshmaGeethika/House-Sales-Database-Management-System" target="_blank" class="project-link">GitHub ↗</a>
+          </div>
+          <h3>House Sales Database Management System</h3>
+          <p>Designed and implemented a normalised, indexed relational database (MySQL) with PHP/XAMPP backend, supporting CRUD operations and query-optimised reporting automation. Delivered role-based access control and interactive stakeholder dashboards for KPI reporting and business intelligence.</p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-tags"><span>ML Pipeline</span><span>Classification</span><span>Fraud</span></div>
+            <a href="https://github.com/RampamGreeshmaGeethika/Projects/tree/main/Auto%20Insurance%20Fraud%20Detection" target="_blank" class="project-link">GitHub ↗</a>
+          </div>
+          <h3>Auto Insurance Fraud Detection</h3>
+          <p>End-to-end ML pipeline for detecting fraudulent insurance claims, including data preprocessing, feature engineering, and classification modelling. Applied statistical analysis to identify fraudulent patterns and improve detection accuracy across imbalanced datasets.</p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-tags"><span>Scikit-learn</span><span>XGBoost</span><span>Flask</span><span>SMOTE</span></div>
+            <a href="https://github.com/RampamGreeshmaGeethika/Machine-Learning-Based-Music-Genre-Classification-Spotify-Data-" target="_blank" class="project-link">GitHub ↗</a>
+          </div>
+          <h3>ML Music Genre Classification (Spotify)</h3>
+          <p>Built a machine learning pipeline for Spotify music genre classification using Random Forest, SVM, XGBoost, and Bagging models. Applied SMOTE balancing and hyperparameter tuning to achieve <strong>88% accuracy</strong>, then deployed predictions via a Flask real-time web interface.</p>
+          <div class="project-highlights">
+            <div class="highlight">🎯 88% classification accuracy</div>
+            <div class="highlight">🚀 Flask deployment</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="projects-more">
+        <a href="https://github.com/RampamGreeshmaGeethika/Projects" target="_blank" class="btn-ghost">View All Projects on GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications" class="publications section">
+    <div class="container">
+      <div class="section-tag">05 — Publications</div>
+      <h2 class="section-title">Research <em>Work</em></h2>
+      <div class="pub-card">
+        <div class="pub-left">
+          <div class="pub-icon">📄</div>
+          <div class="pub-meta">
+            <div class="pub-type">Co-authored Research Paper</div>
+            <div class="pub-journal">IJFMR — International Journal for Multidisciplinary Research</div>
+          </div>
+        </div>
+        <div class="pub-right">
+          <h3>Ensemble Machine Learning for Early Prediction of Chronic Kidney Disease</h3>
+          <p>Co-authored a research paper applying ensemble ML techniques (stacked models) on clinical datasets for early CKD prediction. Implemented performance evaluation techniques to improve diagnostic accuracy and support data-driven healthcare insights.</p>
+          <div class="pub-tags"><span>Ensemble ML</span><span>Healthcare Analytics</span><span>Stacked Models</span><span>Clinical Data</span></div>
+          <a href="https://www.ijfmr.com/research-paper.php?id=9264" target="_blank" class="btn-primary pub-btn">Read Publication ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-tag">06 — Contact</div>
+      <h2 class="section-title">Let's <em>Connect</em></h2>
+      <p class="contact-desc">I'm actively seeking Data Analyst, Business Intelligence, and Data Science roles. Whether you have an opportunity, a question, or just want to say hi — my inbox is always open.</p>
+      <div class="contact-cards">
+        <a href="mailto:rampamgreeshma@gmail.com" class="contact-card">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">rampamgreeshma@gmail.com</div>
+        </a>
+        <a href="https://linkedin.com/in/rampam-greeshmageethika-0537ba209" target="_blank" class="contact-card">
+          <div class="contact-icon">💼</div>
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-value">rampam-greeshmageethika</div>
+        </a>
+        <a href="https://github.com/RampamGreeshmaGeethika" target="_blank" class="contact-card">
+          <div class="contact-icon">🐙</div>
+          <div class="contact-label">GitHub</div>
+          <div class="contact-value">RampamGreeshmaGeethika</div>
+        </a>
+        <a href="https://sites.google.com/view/greeshmageethikarampam/home" target="_blank" class="contact-card">
+          <div class="contact-icon">🌐</div>
+          <div class="contact-label">Portfolio (Google Sites)</div>
+          <div class="contact-value">greeshmageethikarampam</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-logo">GGR<span>.</span></div>
+      <div class="footer-text">Greeshma Geethika Rampam · Data Analyst · Houston, TX</div>
+      <div class="footer-links">
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+    mobileMenu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+      });
+    });
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+          });
+        }
+      });
+    }, { threshold: 0.4 });
+    sections.forEach(s => observer.observe(s));
+
+    // Animate on scroll
+    const animObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('in-view');
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.skill-card, .timeline-item, .project-card, .pub-card, .contact-card, .edu-card').forEach(el => {
+      el.classList.add('anim-el');
+      animObserver.observe(el);
+    });
+  </script>
 </body>
 </html>
